@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+/*=======Technologia=============*/
+.btn {
+    background: #2C74C1 !important;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #94BFF5 !important;
+    cursor: pointer;
+}
+
+.navbar-brand img {
+    height: 4rem;      
+}
+
+.navbar .navbar-nav > .nav-item > .nav-link {
+    font-size: 13px;
+    padding: 24px 10px 24px 10px;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;   
+}
+
+.navbar .navbar-nav > .nav-item > .nav-link:hover {
+    color: #2C74C1;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding-top: 10%;
+    background: linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(31, 30, 30, 0.73)),url("../img/header-img.jpg") no-repeat center center /cover;
+    
+}
+
+h1 {
+    font-weight: 200;
+    margin: 0.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.txt-type {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #fff;
+}
+
+/* .hero-text {
+    padding-top: 200px;
+} */
+
+.hero-text h1 {
+    color: #16517C;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: rgb(46, 45, 45);
+}
+
+.jumbotron {
+    background: #0C459E!important;
+}
+
+.jumbotron h3{
+    font-size: 2.8rem;
+    color: rgb(255, 255, 255);
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.jumbotron .lead {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.circle-imgs {
+    padding: 20px 0;
+}
+.circle-imgs div {
+    padding: 20px;
+}
+
+.blue-text {
+    color: #0D77DF;
+    text-transform: uppercase;   
+}
+
+.green-text {
+    color: #009999;
+}
+
+.hero-text2 h3 {
+    color: #0D77DF;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.hero-text2 p {
+    padding-top: 30px;
+}
+
+.hero-text3 h3 {
+    color: #0D77DF;
+}
+
+.hero-text3 img {
+    padding-left: 250px;
+}
+
+.card-title h1 {
+    color: #009999;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+}
+.card-icon {
+    padding-top: 30%;
+}
+
+.card-icon i {
+    color: #0D77DF;
+}
+
+
+
+
+.arrow2 {
+    transform: rotateY(180deg);
+}
+
+.footer {
+    background: #162339;
+}
+
+.footer-nav-item{
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 10px; 
+}
+.footer-nav-link {
+    text-transform: uppercase;
+    color: #fff;  
+}
+
+.footer-nav-link:hover {
+    color: #2C74C2;
+}
+
+.copyright a {
+    text-transform: none;
+    color: #fff;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+
+/*================ RENU28 =========================*/
+
+
+/*----Carousel---------*/
+.carousel-inner {
+    max-height: 50rem !important;
+}
+
+/*---Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 3s ease-in-out;
+}
+
+/*----Change color of Carousel control----*/
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(100%);
+}
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+/*----- Top Fixed background-------*/
+#fixed-background2 {
+    position: relative;
+    width: 100%;
+    z-index: 1000 !important;
+    padding: 10rem 0 !important;
+}
+
+#fixed-wrap2 {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+#fixed2 {
+    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(31, 30, 30, 0.73)),url("../img/renu-header-img.jpg");
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.renu28-blue-card-text h1 {
+    color: #2C74C2;
+    font-size: 2rem;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .hero-text {
+        text-align: center;
+    }
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    .card-icon {
+        padding-top: 50%;
+    }
+    .card-icon h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:992px){
+    .jumbotron h3{
+        font-size: 2rem;
+        border: none;
+    }   
+    .jumbotron .lead {
+        font-size: 1.3rem;  
+    }     
+    .hero-text2 h3 {
+         font-size: 2rem;
+    }
+    .hero-text2 p {
+         padding-top: 30px; 
+    }
+    .card-icon {
+        padding-top: 80%;
+    }
+    .card-body {
+        text-align: left;
+    }
+    .card-icon h4 {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width:768px){
+    h1{
+        font-size: 2rem;
+    }
+    .txt-type {
+        font-size: 1.2rem;
+    }
+    .card-icon {
+        padding-top: 10%;
+    }
+    .card-body {
+        text-align: center;
+    }
+    
+}
+
+/*---Bootsrap Mobil Gutter Fix---*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
