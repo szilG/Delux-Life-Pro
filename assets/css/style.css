@@ -114,7 +114,7 @@ h1{
 }
 
 .green-text {
-    color: #009999;
+    color: rgb(66, 66, 66);
 }
 
 .hero-text2 h3 {
@@ -125,6 +125,10 @@ h1{
 
 .hero-text2 p {
     padding-top: 30px;
+}
+
+.hero-text2 .lead {
+    color: #009999;
 }
 
 .hero-text3 h3 {
@@ -139,9 +143,6 @@ h1{
     color: #009999;
 }
 
-.card {
-    background: rgb(255, 255, 255);
-}
 .card-icon {
     padding-top: 30%;
 }
@@ -150,11 +151,16 @@ h1{
     color: #0D77DF;
 }
 
-
-
-
 .arrow2 {
     transform: rotateY(180deg);
+}
+
+.video3-cont h2{
+    color: #009999;
+    text-transform: uppercase;
+}
+.bottom-text p {
+    color: #333333;
 }
 
 .footer {
