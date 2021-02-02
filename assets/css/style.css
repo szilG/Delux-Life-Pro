@@ -193,28 +193,6 @@ h1{
 
 /*================ RENU28 =========================*/
 
-
-/*----Carousel---------*/
-.carousel-inner {
-    max-height: 50rem !important;
-}
-
-/*---Carousel Transition Speed --*/
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  transition: transform 3s ease-in-out;
-}
-
-/*----Change color of Carousel control----*/
-.carousel-control-next,
-.carousel-control-prev  {
-    filter: invert(100%);
-}
-.carousel-indicators {
-    filter: invert(100%);
-}
-
 /*----- Top Fixed background-------*/
 #fixed-background2 {
     position: relative;
@@ -253,7 +231,48 @@ h1{
     font-size: 2rem;
 }
 
+.prove-header-text h1 {
+    color: #333;
+}
 
+.prove-img1 {
+    padding-left: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----Carousel---------*/
+.carousel-inner {
+    max-height: 50rem !important;
+}
+
+/*---Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 3s ease-in-out;
+}
+
+/*----Change color of Carousel control----*/
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(100%);
+}
+.carousel-indicators {
+    filter: invert(100%);
+}
 
 
 @media screen and (max-width:1200px){
