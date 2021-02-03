@@ -25,6 +25,9 @@ body {
 .navbar-brand img {
     height: 4rem;      
 }
+.navbar {
+    background-color: white !important;
+}
 
 .navbar .navbar-nav > .nav-item > .nav-link {
     font-size: 13px;
@@ -240,6 +243,14 @@ body {
 li {
     list-style: none;
 }
+
+/*===============ASEA ES A SPORT=============*/
+
+.hero-text-sport h1 {
+    color: #0D77DF;
+    text-transform: uppercase;
+}
+
 
 
 
