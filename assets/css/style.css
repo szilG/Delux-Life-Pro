@@ -244,6 +244,19 @@ li {
     list-style: none;
 }
 
+.renu-jambotron h5 {
+    color: white;
+    text-align: center;
+}
+
+.renu-jambotron img {
+    opacity: 0.3;
+}
+
+.renu-jambotron img:hover {
+    opacity: 0.5;
+}
+
 /*===============ASEA ES A SPORT=============*/
 
 .hero-text-sport h1 {
@@ -335,6 +348,16 @@ li {
         text-align: center;
     }
     
+}
+
+@media (max-width:576px) {
+    .renu-jambotron img {
+      width: 100px;
+      height: 50px;
+    }
+    .renu-jambotron .imgs {
+        padding-left: 35%;
+    }
 }
 
 /*---Bootsrap Mobil Gutter Fix---*/
