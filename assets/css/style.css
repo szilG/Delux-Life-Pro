@@ -42,41 +42,30 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 40vh;
     padding-top: 10%;
     background: linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(31, 30, 30, 0.73)),url("../img/header-img.jpg") no-repeat center center /cover;
     
 }
 
-h1 {
+.intro h1 {
     font-weight: 200;
     margin: 0.4rem;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-}
-
-h1{
     font-size: 3rem;
 }
 
-.txt-type {
+/* .txt-type {
     color: #fff;
     font-size: 2.5rem;
-}
-
-/* Cursor */
-.txt-type > .txt {
-    border-right: 0.2rem solid #fff;
-}
-
-/* .hero-text {
-    padding-top: 200px;
 } */
 
-.hero-text h1 {
-    color: #16517C;
-}
+/* Cursor */
+/* .txt-type > .txt {
+    border-right: 0.2rem solid #fff;
+} */
 
 .hero-text p {
     font-size: 1rem;
@@ -159,9 +148,7 @@ h1{
     color: #009999;
     text-transform: uppercase;
 }
-.bottom-text p {
-    color: #333333;
-}
+
 
 .footer {
     background: #162339;
@@ -226,54 +213,61 @@ h1{
     will-change: transform;
 }
 
+.renu28-heading-text h1 {
+    color: #0D77DF;
+    text-transform: uppercase;
+}
+
 .renu28-blue-card-text h1 {
-    color: #2C74C2;
+    color: #0D77DF;
     font-size: 2rem;
 }
 
 .prove-header-text h1 {
-    color: #333;
+    color: #0D77DF;
+    text-transform: uppercase;
 }
 
 .prove-img1 {
     padding-left: 15%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----Carousel---------*/
-.carousel-inner {
-    max-height: 50rem !important;
+.renu-prove-text h3 {
+    color: #0D77DF;
+    text-transform: uppercase;
 }
 
-/*---Carousel Transition Speed --*/
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  transition: transform 3s ease-in-out;
+li {
+    list-style: none;
 }
 
-/*----Change color of Carousel control----*/
-.carousel-control-next,
-.carousel-control-prev  {
-    filter: invert(100%);
-}
-.carousel-indicators {
-    filter: invert(100%);
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============MEDIA================*/
+
+@media screen and (min-width:1200px){
+    .second-ul {
+      padding-left: 50%;
+    }
+}
+@media screen and (min-width:992px){
+    .renu-cert-text {
+        padding-top: 15%;
+    }
+}
 
 @media screen and (max-width:1200px){
     .hero-text {
