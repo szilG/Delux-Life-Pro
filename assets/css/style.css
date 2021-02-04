@@ -105,7 +105,7 @@ body {
     text-transform: uppercase;   
 }
 
-.green-text {
+.gray-text {
     color: rgb(66, 66, 66);
 }
 
@@ -120,7 +120,7 @@ body {
 }
 
 .hero-text2 .lead {
-    color: #009999;
+    color: #145887;
 }
 
 .hero-text3 h3 {
@@ -129,10 +129,6 @@ body {
 
 .hero-text3 img {
     padding-left: 250px;
-}
-
-.card-title h1 {
-    color: #009999;
 }
 
 .card-icon {
@@ -148,7 +144,7 @@ body {
 }
 
 .video3-cont h2{
-    color: #009999;
+    color:#145887;
     text-transform: uppercase;
 }
 
@@ -202,7 +198,7 @@ body {
 }
 
 #fixed2 {
-    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0.52), rgba(31, 30, 30, 0.73)),url("../img/renu-header-img.jpg");
+    background-image:url("../img/renu-header-img.jpg");
     position: fixed;
     display: block;
     top: 0;
@@ -214,6 +210,16 @@ body {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
+}
+
+#fixed2:before {
+    content: "";
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;  
 }
 
 .renu28-heading-text h1 {
@@ -231,30 +237,17 @@ body {
     text-transform: uppercase;
 }
 
-.prove-img1 {
-    padding-left: 15%;
-}
-
 .renu-prove-text h3 {
     color: #0D77DF;
     text-transform: uppercase;
 }
 
+.renu-dermatest p {
+    font-weight: 500;   
+}
+
 li {
     list-style: none;
-}
-
-.renu-jambotron h5 {
-    color: white;
-    text-align: center;
-}
-
-.renu-jambotron img {
-    opacity: 0.3;
-}
-
-.renu-jambotron img:hover {
-    opacity: 0.5;
 }
 
 /*===============ASEA ES A SPORT=============*/
@@ -274,7 +267,19 @@ li {
 
 
 
+/*==============TERMEKTAPASZTALATOK===============*/
 
+.warning-text {
+    border: solid 1px red;
+}
+
+.warning-text h1, h3 {
+    color: red;
+}
+
+.warning-text span {
+    text-decoration: underline;
+}
 
 
 
@@ -331,11 +336,14 @@ li {
     .card-icon h4 {
         font-size: 1.4rem;
     }
+    .renu-prove-text h3 {
+        font-size: 1.5rem;
+    }
 }
 
 
 @media (max-width:768px){
-    h1{
+    .intro h1{
         font-size: 2rem;
     }
     .txt-type {
@@ -347,17 +355,9 @@ li {
     .card-body {
         text-align: center;
     }
-    
-}
-
-@media (max-width:576px) {
-    .renu-jambotron img {
-      width: 100px;
-      height: 50px;
-    }
-    .renu-jambotron .imgs {
-        padding-left: 35%;
-    }
+    .prove-img1 {
+        padding-left: 15%;
+    }   
 }
 
 /*---Bootsrap Mobil Gutter Fix---*/
