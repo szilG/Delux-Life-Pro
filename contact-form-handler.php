@@ -1,17 +1,23 @@
 <?php
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $message1 = $_POST["message"];
-    $message2 = $_POST["message2"];
 
-    $mailTo = "gombiszilvi@gmail.com";
+$name = $_POST["name"];
+$email = $_POST["email"];
+$phone = $_POST["phone"];
+$message1 = $_POST["message"];
+$message2 = $_POST["message2"];
 
-    $txt = "Név = ". $name . "\r\n Email = " . $email . "\r\n Telefon = " . $phone . "\r\n Kitöl kapta ezt az email címet = " . $message 
-    "\r\n Üzenet = " . $message2;
+$to = "gombiszilvi@gmail.com";
+$body = "";
 
-    if ($email!=NULL){
-        mail($to,$txt,);
-    }
+$body .= "Név: ".$name. "\r\n"; 
+$body .= "Email: ".$email. "\r\n";
+$body .= "Telefon: " .$phone. "\r\n";
+$body .= "Kitöl kapta ezt az email címet: " .$message1. "\r\n";
+$body .= "Üzenet = " .$message2;
+
+mail($to,$message1,$body);
+
+
+
 
 ?>
