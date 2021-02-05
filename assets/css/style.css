@@ -281,6 +281,64 @@ li {
     text-decoration: underline;
 }
 
+.testimonials-container {
+    background: #0D77DF;
+}
+
+.testimonials-container2 {
+    background: #145887;
+    margin-top: 1px;
+}
+
+.comments .comment {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.comments .comment p {
+    margin: 0 0 10px 0;
+}
+
+.bubble {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    color: #222;
+    border-radius: 3px;
+    margin-left: 40px;
+}
+
+.bubble::after {
+    content: "";
+    display: block;
+    position: absolute;
+    /*triangle*/
+    left: -30px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 30px solid #fff;
+}
+
+.testimonials-img {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.testimonials-imgs::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.testimonials-img2 {
+    width: 80%;
+}
+
+
 
 
 
@@ -295,6 +353,9 @@ li {
 @media screen and (min-width:992px){
     .renu-cert-text {
         padding-top: 15%;
+    }
+    .testimonials-img {
+        width: 50%;
     }
 }
 
@@ -339,6 +400,13 @@ li {
     .renu-prove-text h3 {
         font-size: 1.5rem;
     }
+    .bubble {
+        margin-left: 0;
+    }
+    .testimonials-img2 {
+        width: 50%;
+        margin-left: 25%;
+    }
 }
 
 
@@ -357,7 +425,16 @@ li {
     }
     .prove-img1 {
         padding-left: 15%;
-    }   
+    }
+    .warning-text h1, h3 {
+        font-size: 1.2rem;
+    }
+    .forras-text p {
+        font-size: .8rem;
+    }
+    .forras-text a {
+        font-size: 1.2rem;
+    }
 }
 
 /*---Bootsrap Mobil Gutter Fix---*/
