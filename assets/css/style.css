@@ -350,6 +350,30 @@ li {
 
 
 
+/*====================KAPCSOLAT============*/
+
+
+button[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #0D77DF;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease backgroud;
+}
+
+button[type="submit"]:hover {
+    background: #0C459E;
+    color: #fff;
+}
+
+
+
+
 
 
 
