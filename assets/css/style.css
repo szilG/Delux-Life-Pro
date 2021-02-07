@@ -420,7 +420,6 @@ button[type="submit"]:hover {
 
 .contact-bg {
     background: linear-gradient(30deg, #4093F9 50%, #5D9DEA 50% );
-    height: 90vh;
 }
 
 .contact-bg a {
@@ -429,8 +428,9 @@ button[type="submit"]:hover {
     font-size: 1.5rem;
 }
 
-.down {
-    padding-top: 20%;
+.form-group label {
+    margin-bottom: 0 !important;
+    margin-top: .5rem;
 }
 
 
@@ -454,6 +454,9 @@ button[type="submit"]:hover {
     .testimonials-img {
         /*3 images*/
         width: 50%;
+    }
+    .contact-bg p {
+        padding-top: 30%;
     }
 }
 
