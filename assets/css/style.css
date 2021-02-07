@@ -10,6 +10,8 @@ body {
 }
 
 /*=======Technologia=============*/
+
+
 .btn {
     background: #2C74C1 !important;
     color: #fff;
@@ -131,12 +133,15 @@ body {
     padding-left: 250px;
 }
 
+.card {
+    background: linear-gradient(#6fabf5, #2076df);
+}
 .card-icon {
     padding-top: 30%;
 }
 
 .card-icon i {
-    color: #0D77DF;
+    color: #fff;
 }
 
 .arrow2 {
@@ -257,6 +262,10 @@ li {
     text-transform: uppercase;
 }
 
+.clinical-test-text {
+    line-height: 1.8rem;
+}
+
 
 
 
@@ -282,12 +291,12 @@ li {
 }
 
 .testimonials-container {
-    background: #0D77DF;
+    background: #5D9DEA;
     margin-top: 1px;
 }
 
 .testimonials-container2 {
-    background: #145887;
+    background: #4093F9;
     margin-top: 1px;
 }
 
@@ -348,6 +357,22 @@ li {
     padding: 5px;
 }
 
+/*==================GALÉRIA=========*/
+
+.gallery {
+    backface-visibility: hidden;
+    transition: all .4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.01);
+}
+
+.gallery h1 {
+    color: #0D77DF;
+    text-transform: uppercase;   
+}
+
 
 
 /*====================KAPCSOLAT============*/
@@ -371,6 +396,21 @@ button[type="submit"]:hover {
     color: #fff;
 }
 
+.contact-bg {
+    background: linear-gradient(30deg, #4093F9 50%, #5D9DEA 50% );
+}
+
+.form-group label {
+    margin-bottom: 0 !important;
+    margin-top: .5rem;
+}
+
+.contact-bg a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
 
 
 
@@ -391,6 +431,9 @@ button[type="submit"]:hover {
     .testimonials-img {
         /*3 images*/
         width: 50%;
+    }
+    .contact-bg p {
+        padding-top: 30%;
     }
 }
 
