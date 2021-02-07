@@ -4,7 +4,7 @@ $(document).ready(function() {
     })
 });
 
-
+//Back to Top button
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
