@@ -7,7 +7,7 @@
         $message1 = $_POST["message"];
         $message2 = $_POST["message2"];
 
-        $to = "gombiszilvi@gmail.com";
+        $to = "deluxelifepro@gmail.com";
         $subject = "Form Submission";
         $message = "Name: ".$name. "/r/n". "Phone: ".$phone. "/r/n". "Kitöl kapta ezt az email címet: ".$message1. "/r/n". "Üzenet: ".$message2;
         $headers = "From: ".$email;

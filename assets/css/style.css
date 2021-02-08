@@ -84,16 +84,6 @@ body {
     font-size: 3rem;
 }
 
-/* .txt-type {
-    color: #fff;
-    font-size: 2.5rem;
-} */
-
-/* Cursor */
-/* .txt-type > .txt {
-    border-right: 0.2rem solid #fff;
-} */
-
 .hero-text p {
     font-size: 1rem;
     color: rgb(46, 45, 45);
@@ -433,8 +423,48 @@ button[type="submit"]:hover {
     margin-top: .5rem;
 }
 
+/*==========Maintenance=========*/
+.maintenance {
+    background: #128DDC;
+}
 
+.maintenance h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 5rem;
+}
 
+.maintenance h2 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: .5em 3em;
+    border: .16em solid #fff;
+    margin: 0 .3em .3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    transition: all .15s;
+}
+
+.btn1:hover {
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+.link > a {
+    color: black;
+}
+
+.link > a:hover {
+    color: red;
+}
 
 
 
