@@ -11,6 +11,17 @@ body {
 
 /*=======Technologia=============*/
 
+/*-----Language Flags---*/
+.dropdown a {
+    color: #333;
+    
+}
+
+.dropdown a:hover {
+    color: #2C74C1;
+}
+
+
 #back-to-top-btn {
     display: none;
     position: fixed;
@@ -146,7 +157,7 @@ body {
 }
 
 .card {
-    background: linear-gradient(#6fabf5, #2076df);
+    background: #128DDC;
 }
 .card-icon {
     padding-top: 30%;
@@ -488,6 +499,9 @@ button[type="submit"]:hover {
     .contact-bg p {
         padding-top: 30%;
     }
+    .intro {
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width:1200px){
@@ -574,6 +588,9 @@ button[type="submit"]:hover {
         /* 1 image*/
         width: 80%;
         margin-left: 10%;
+    }
+    .hero-text-sport h1 {
+        font-size: 2rem;
     }
 }
 
