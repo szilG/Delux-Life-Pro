@@ -1,3 +1,4 @@
+// LightboxJS
 $(document).ready(function() {
   lightbox.option({
       'wrapAround': false
@@ -57,3 +58,23 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
+
+// EmailJs
+function sendMail(contactForm) {
+  emailjs.send("service_utc302r", "template_9wc35o9", {
+      name: contactForm.name.value,
+      email: contactForm.email.value,
+      phone: contactForm.phone.value,
+      message : contactForm.message.value,
+      message2: contactForm.message2.value
+  })
+  .then(function(res) {
+      alert('Your mail is sent!');
+      console.log("success", res.status);
+  },
+  function(error) {
+      alert('Oops... ' + JSON.stringify(error));
+      console.log("Failed", error);
+  });
+  return false;
+}

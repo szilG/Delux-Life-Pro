@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Deluxe Life Pro</title>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kubWAs5UzOaovudWdYgFm");
+    })();
+    </script>
 </head>
 <body>
 
@@ -52,7 +58,7 @@
     <div class="container-fluid contact-bg">
       <div class="row">
         <div class="col-lg-6 mt-5 mt-5 pt-5 mb-3 mb-lg-5">
-          <form class="signup-form" action="contact-handler.php" method="post">
+          <form class="signup-form" onsubmit="return sendMail(this);">
             <div class="form-row ml-lg-5 ml-0 pl-lg-5 pl-0">
                 <div class="col-md-12 form-group">
                     <label for="name">Név (kötelező)</label>
