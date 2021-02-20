@@ -1,10 +1,3 @@
-// LightboxJS
-$(document).ready(function() {
-  lightbox.option({
-      'wrapAround': false
-    })
-});
-
 //Back to Top button
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
@@ -61,7 +54,7 @@ function easeInOutCubic(t, b, c, d) {
 
 // EmailJs
 function sendMail(contactForm) {
-  emailjs.send("service_utc302r", "template_9wc35o9", {
+  emailjs.send("service_856o7ys", "template_0p5gsyd", {
       name: contactForm.name.value,
       email: contactForm.email.value,
       phone: contactForm.phone.value,
@@ -76,5 +69,8 @@ function sendMail(contactForm) {
       alert('Oops... ' + JSON.stringify(error));
       console.log("Failed", error);
   });
+  document.getElementById("myForm").reset();
   return false;
 }
+
+
