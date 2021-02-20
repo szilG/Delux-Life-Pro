@@ -46,15 +46,39 @@ body {
   }
 
 .btn {
-    background: #2C74C1 !important;
-    color: #fff;
-    border: none;
+    border: 1px solid #128DDC;
+    border-radius: 30px 0 30px 0;
+    background: none;
+    padding: 10px 60px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: #128DDC;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #94BFF5 !important;
-    cursor: pointer;
+    color: #fff;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #128DDC;
+    z-index: -1;
+    transition: .8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn:hover:before {
+    height: 180%;
 }
 
 .navbar-brand img {
@@ -400,27 +424,37 @@ li {
 
 /*====================KAPCSOLAT============*/
 
-
-button[type="submit"] {
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 8px;
-    background: #0D77DF;
+.btn1 {
+    border: 1px solid #fff;
+    border-radius: 30px 0 30px 0;
+    background: none;
+    padding: 10px 60px;
+    font-size: 20px;
+    margin: 10px;
     color: #fff;
-    text-align: center;
-    cursor: pointer;
-    transition: .3s ease backgroud;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
 }
 
-button[type="submit"]:hover {
-    background: #0C459E;
-    color: #fff;
+.btn1:hover,
+.btn1:focus {
+    color: #162339;
+    border: 1px solid #162339;
 }
 
 .contact-bg {
-    background: linear-gradient(30deg, #4093F9 50%, #5D9DEA 50% );
+    background: #128DDC;
+}
+
+.contact-bg h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.contact-bg span {
+    color: #fff;
 }
 
 .contact-bg a {
@@ -432,53 +466,14 @@ button[type="submit"]:hover {
 .form-group label {
     margin-bottom: 0 !important;
     margin-top: .5rem;
-}
-
-/*==========Maintenance=========*/
-.maintenance {
-    background: #128DDC;
-}
-
-.maintenance h1 {
-    text-transform: uppercase;
     color: #fff;
-    font-size: 5rem;
+    font-size: 1.2rem;
 }
 
-.maintenance h2 {
-    text-transform: uppercase;
+.helper-text i {
     color: #fff;
+    font-size: 1.4rem;
 }
-
-.btn1 {
-    display: inline-block;
-    padding: .5em 3em;
-    border: .16em solid #fff;
-    margin: 0 .3em .3em 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    transition: all .15s;
-}
-
-.btn1:hover {
-    color:#DDDDDD;
-    border-color:#DDDDDD;
-}
-
-.link > a {
-    color: black;
-}
-
-.link > a:hover {
-    color: red;
-}
-
-
-
 
 
 /*=============MEDIA================*/
@@ -496,8 +491,11 @@ button[type="submit"]:hover {
         /*3 images*/
         width: 50%;
     }
-    .contact-bg p {
-        padding-top: 30%;
+    .helper-text p:first-child{
+        padding-top: 160px;
+    }
+    .helper-text p:last-child{
+        padding-top: 100px;
     }
     .intro {
         height: 50vh;
@@ -590,6 +588,9 @@ button[type="submit"]:hover {
         margin-left: 10%;
     }
     .hero-text-sport h1 {
+        font-size: 2rem;
+    }
+    .contact-bg h1 {
         font-size: 2rem;
     }
 }
