@@ -11,7 +11,7 @@
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
     (function() {
-    emailjs.init("user_kubWAs5UzOaovudWdYgFm");
+    emailjs.init("user_FG5FKRlyviqTIX6c8KnSc");
     })();
     </script>
 </head>
@@ -57,8 +57,13 @@
     <!--Start Hero Section-->
     <div class="container-fluid contact-bg">
       <div class="row">
-        <div class="col-lg-6 mt-5 mt-5 pt-5 mb-3 mb-lg-5">
-          <form class="signup-form" onsubmit="return sendMail(this);">
+        <div class="col-12 mt-lg-5 pt-5 text-center">
+            <h1>Vegye fel a kapcsolatot velünk</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mt-lg-5 pt-5 mb-3 mb-lg-5">
+          <form id="myForm" class="signup-form" onsubmit="return sendMail(this);">
             <div class="form-row ml-lg-5 ml-0 pl-lg-5 pl-0">
                 <div class="col-md-12 form-group">
                     <label for="name">Név (kötelező)</label>
@@ -72,14 +77,16 @@
                     <label for="message2">Megjegyés (kötelező) </label>
                     <textarea name="message2" id="message2" rows="10" class="form-control" required></textarea>
                 </div>
-                <div class="p-0 mt-2 m-auto btn">
-                    <button type="submit" name="submit" class="submit-btn">Üzenet Küldése</button>
+                <div class="p-2 mt-2 m-auto btn">
+                    <button type="submit" name="submit" class="btn1">Üzenet Küldése</button>
                 </div>
             </div>
           </form>
         </div>
-        <div class="col-lg-6 mt-5 pt-lg-5 text-center">
-          <p class="lead">Az ASEA életeket megváltoztató, egyedülálló üzleti lehetőség!
+        <div class="col-lg-6  pt-5  mt-lg-5 text-center helper-text">
+          <p>Meghivóért és további információért töltse ki a kérdőívet vagy vegye fel a kapcsolatot velünk<br> ezen az email címen.</p>
+          <i class="fas fa-envelope">: deluxelifepro@gmail.com</i>
+          <p class="pt-3 pt-md-5">Az ASEA életeket megváltoztató, egyedülálló üzleti lehetőség!<br>
             Tovabbi informacióért kattints <a href="http://www.deluxelifepro.com/" target="_blank" rel="noopener">ide!</a></p>
         </div>
       </div>
